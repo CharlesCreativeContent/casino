@@ -11,11 +11,11 @@
 <body>
   <div class="container">
 
-    <p>Career Wins:<span id="wins"><%= info.winTotal %></span> </p><br>
-    <p id="careerLoses">Career Loses: <span id="loses"><%= info.loseTotal %></span></p>
-
     <div class="page-header text-center">
       <h1><img src="<%= info.medal %>" alt="">Roulette Table</h1>
+
+        <p>Career Wins:<span id="wins"><%= info.winTotal %></span> </p><br>
+        <p id="careerLoses">Career Loses: <span id="loses"><%= info.loseTotal %></span></p>
 
       <a href="/profile" class="btn btn-default btn-sm">Profile</a>
       <a href="/leader" class="btn btn-default btn-sm">LeaderBoards</a>
@@ -23,6 +23,8 @@
       <a href="/coinFlip" class="btn btn-default btn-sm">CoinFlip</a>
       <a href="/logout" class="btn btn-default btn-sm">Logout</a>
     </div>
+    <section>
+
     <h3><img src="https://i.imgur.com/iZIZgCM.gif" alt=""></h3>
 
 
@@ -76,7 +78,7 @@
     <span>Amount of Money in your Pocket $</span>
     <span id="pocket"> <%= info.money %></span>
 
-
+  </section>
   </div>
 
   <script src="main.js"></script>

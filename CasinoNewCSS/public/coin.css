@@ -8,7 +8,9 @@ div{
 }
 
 h1{
-
+  background: rgba(0,0,0,0.4);
+  border: 1px solid white;
+  border-radius: 20%;
   text-align: center;
     font-size: 65px;
     font-family: cursive;
@@ -25,4 +27,18 @@ label{
   margin-left: 33%;
   margin-top: 5%;
   border-radius: 1px;
+}
+
+section{
+  background: rgba(0,0,0,0.4);
+  border: 1px solid white;
+  border-radius: 20%
+}
+p {
+  float: left;
+  clear: left;
+  margin: 0;
+  position: relative;
+  bottom: 90px;
+  left: 15px;
 }

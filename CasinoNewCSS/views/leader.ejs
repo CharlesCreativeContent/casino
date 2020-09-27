@@ -10,13 +10,13 @@
 
 <body>
   <div class="container">
-
-    <p>Career Wins:<span id="wins"><%= info.filter(x=>x.name===user.local.email)[0].winTotal %></span> </p><br>
-    <p id="careerLoses">Career Loses: <span id="loses"><%= info.filter(x=>x.name===user.local.email)[0].loseTotal %></span></p>
-    <p id="moneyHeader">Money in your Pocket $<span id="pocket"> <%= info.filter(x=>x.name===user.local.email)[0].money %></span></p>
-
     <div class="page-header text-center">
       <h1>National Leader Boards</h1>
+
+        <p>Career Wins:<span id="wins"><%= info.filter(x=>x.name===user.local.email)[0].winTotal %></span> </p><br>
+        <p id="careerLoses">Career Loses: <span id="loses"><%= info.filter(x=>x.name===user.local.email)[0].loseTotal %></span></p>
+        <p id="moneyHeader">Money in your Pocket $<span id="pocket"> <%= info.filter(x=>x.name===user.local.email)[0].money %></span></p>
+
 
       <a href="/profile" class="btn btn-default btn-sm">Profile</a>
       <!-- <a  id = "slots" class="btn btn-default btn-sm">Slots</a> -->

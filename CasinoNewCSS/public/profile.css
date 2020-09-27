@@ -13,9 +13,12 @@ div{
 h1{
 
   text-align: center;
-    font-size: 65px;
+    font-size: 70px;
     font-family: cursive;
     font-weight: bold;
+      background: rgba(0,0,0,0.4);
+      border: 1px solid white;
+      border-radius: 20%
 }
 
 img{
@@ -23,9 +26,12 @@ img{
   width: 100px;
 }
 p {
-  position: fixed;
-  top: 0;
-  left: 0;
+  float: left;
+  clear: left;
+  margin: 0;
+  position: relative;
+  bottom: 80px;
+  left: 15px;
 }
 
 label{
@@ -35,9 +41,21 @@ label{
   border-radius: 1px;
 }
 
-#careerLoses {
+/* #careerLoses {
   top: 15px;
 }
 #moneyHeader {
   top: 30px;
+} */
+li {
+  list-style: none;
+    background: rgba(0,0,0,0.4);
+    border: 1px solid white;
+    border-radius: 20%;
+    padding-left: 31%
+}
+section {
+  background: rgba(0,0,0,0.4);
+  border: 1px solid white;
+  border-radius: 20%
 }

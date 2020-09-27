@@ -11,14 +11,15 @@
 <body>
   <div class="container">
 
-    <p>Career Wins:<span id="wins"><%= info.winTotal %></span> </p><br>
-    <p id="careerLoses">Career Loses: <span id="loses"><%= info.loseTotal %></span></p>
-    <p id="moneyHeader">Money in your Pocket $<span id="pocket"> <%= info.money %></span></p>
-
     <div class="page-header text-center">
       <h1><img src="<%= info.medal %>" />
 
         Welcome, <%= user.local.email%></h1>
+
+          <p>Career Wins:<span id="wins"><%= info.winTotal %></span> </p><br>
+          <p id="careerLoses">Career Loses: <span id="loses"><%= info.loseTotal %></span></p>
+          <p id="moneyHeader">Money in your Pocket $<span id="pocket"> <%= info.money %></span></p>
+          
 
         <a href="/leader" class="btn btn-default btn-sm">LeaderBoards</a>
       <!-- <button id = "slots" class="btn btn-default btn-sm">Slots</button> -->
@@ -26,6 +27,7 @@
       <a href="/roulette" class="btn btn-default btn-sm">Roullette</a>
       <a href="/logout" class="btn btn-default btn-sm">Logout</a>
     </div>
+    <section>
     <h2><span id="result"></span></h2>
 
     <label for="color">Buy New Medal for $5000</label>
@@ -41,7 +43,7 @@
     <br>
     <span></span>
 
-
+</section>
 
   </div>
 

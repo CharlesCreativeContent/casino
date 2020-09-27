@@ -11,12 +11,12 @@
 <body>
   <div class="container">
 
-    <p>Career Wins:<span id="wins"><%= info.winTotal %></span> </p><br>
-    <p id="careerLoses">Career Loses: <span id="loses"><%= info.loseTotal %></span></p>
-    <p id="moneyHeader">Money in your Pocket $<span id="pocket"> <%= info.money %></span></p>
-
     <div class="page-header text-center">
       <h1><img src="<%= info.medal %>" alt="">Coin Flip</h1>
+
+        <p>Career Wins:<span id="wins"><%= info.winTotal %></span> </p><br>
+        <p id="careerLoses">Career Loses: <span id="loses"><%= info.loseTotal %></span></p>
+        <p id="moneyHeader">Money in your Pocket $<span id="pocket"> <%= info.money %></span></p>
 
       <a href="/profile" class="btn btn-default btn-sm">Profile</a>
       <a href="/leader" class="btn btn-default btn-sm">LeaderBoards</a>
@@ -24,6 +24,7 @@
       <a href="/roulette" class="btn btn-default btn-sm">Roullette</a>
       <a href="/logout" class="btn btn-default btn-sm">Logout</a>
     </div>
+    <section>
     <h2><span id="result"></span></h2>
 
     <label for="color">Bet on Heads or Tails</label>
@@ -37,7 +38,7 @@
 
     <br>
     <span></span>
-
+</section>
 
 
   </div>

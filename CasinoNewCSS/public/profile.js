@@ -7,7 +7,7 @@ let Player = {
 
 let Casino = {
   buy: ()=>{
-    if (Player.pocket>5000){
+    if (Player.pocket>=5000){
     let medal = document.getElementById('buy').value
     console.log(medal,document.querySelector('h1').innerHTML.split('Welcome, ')[1])
     fetch('/medal', {
