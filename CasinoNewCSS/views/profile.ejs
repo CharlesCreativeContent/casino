@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <title></title>
+  <link rel="stylesheet" href="//netdna.bootstrapcdn.com/bootstrap/3.0.2/css/bootstrap.min.css">
+  <link rel="stylesheet" href="//netdna.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+  <link rel="stylesheet" href="profile.css">
+</head>
+
+<body>
+  <div class="container">
+
+    <p>Career Wins:<span id="wins"><%= info.winTotal %></span> </p><br>
+    <p id="careerLoses">Career Loses: <span id="loses"><%= info.loseTotal %></span></p>
+    <p id="moneyHeader">Money in your Pocket $<span id="pocket"> <%= info.money %></span></p>
+
+    <div class="page-header text-center">
+      <h1><img src="<%= info.medal %>" />
+
+        Welcome, <%= user.local.email%></h1>
+
+        <a href="/leader" class="btn btn-default btn-sm">LeaderBoards</a>
+      <!-- <button id = "slots" class="btn btn-default btn-sm">Slots</button> -->
+      <a href="/coinFlip" class="btn btn-default btn-sm">CoinFlip</a>
+      <a href="/roulette" class="btn btn-default btn-sm">Roullette</a>
+      <a href="/logout" class="btn btn-default btn-sm">Logout</a>
+    </div>
+    <h2><span id="result"></span></h2>
+
+    <label for="color">Buy New Medal for $5000</label>
+    <select name="color" id="buy">
+      <option value="koopa">Koopa Troopa</option>
+      <option value="shyGuy">Toad</option>
+      <option value="hammer">Hammer Bro</option>
+      <option value="squid">Squid</option>
+      <option value="bowser">Bowser Jr.</option>
+    </select>
+    <button name="buy" type="submit">Buy!</button>
+
+    <br>
+    <span></span>
+
+
+
+  </div>
+
+  <script src="profile.js"></script>
+
+</body>
+
+</html>

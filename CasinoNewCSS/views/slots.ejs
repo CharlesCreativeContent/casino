@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <title></title>
+  <link rel="stylesheet" href="//netdna.bootstrapcdn.com/bootstrap/3.0.2/css/bootstrap.min.css">
+  <link rel="stylesheet" href="//netdna.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+  <link rel="stylesheet" href="profile.css">
+</head>
+
+<body>
+  <div class="container">
+
+    <p>Career Wins:<span id="wins"><%= info.winTotal %></span> </p><br>
+    <p id="careerLoses">Career Loses: <span id="loses"><%= info.loseTotal %></span></p>
+    <p id="moneyHeader">Money in your Pocket $<span id="pocket"> <%= info.money %></span></p>
+
+    <div class="page-header text-center">
+      <h1><img src="<%= info.medal %>" alt="">Welcome, <%= user.local.email%></h1>
+
+      <a href="/profile" class="btn btn-default btn-sm">Profile</a>
+      <a href="/coinFlip" class="btn btn-default btn-sm">CoinFlip</a>
+      <a href="/roulette" class="btn btn-default btn-sm">Roullette</a>
+      <a href="/logout" class="btn btn-default btn-sm">Logout</a>
+    </div>
+    <h2><span id="result"></span></h2>
+
+    <label for="color">Bet on Red or Black</label>
+    <select name="color" id="color">
+      <option value="red">Red</option>
+      <option value="black">black</option>
+    </select>
+
+    <input type="number" placeholder="Place Bet$ here..." name="bet" required></input>
+    <button name="bet" type="submit">Submit</button>
+
+    <br>
+    <span></span>
+
+
+
+  </div>
+
+  <script src="main.js"></script>
+
+</body>
+
+</html>

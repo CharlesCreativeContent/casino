@@ -1,0 +1,28 @@
+body{
+  background-image: url("https://cdn.pixabay.com/photo/2018/01/20/19/30/dice-3095227_960_720.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+div{
+  color: white;
+}
+
+h1{
+
+  text-align: center;
+    font-size: 65px;
+    font-family: cursive;
+    font-weight: bold;
+}
+
+img{
+  height: 100px;
+  width: 100px;
+}
+
+label{
+  font-size: 30px;
+  margin-left: 33%;
+  margin-top: 5%;
+  border-radius: 1px;
+}

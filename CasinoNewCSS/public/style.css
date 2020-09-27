@@ -1,0 +1,17 @@
+body{
+  background-image: url("https://cdn1.vectorstock.com/i/1000x1000/42/40/casino-background-vector-994240.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+div{
+  color: white;
+}
+
+h1{
+
+  text-align: center;
+    font-size: 65px;
+    font-family: cursive;
+    font-weight: bold;
+}

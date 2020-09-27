@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <title></title>
+  <link rel="stylesheet" href="//netdna.bootstrapcdn.com/bootstrap/3.0.2/css/bootstrap.min.css">
+  <link rel="stylesheet" href="//netdna.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+  <link rel="stylesheet" href="profile.css">
+</head>
+
+<body>
+  <div class="container">
+
+    <p>Career Wins:<span id="wins"><%= info.filter(x=>x.name===user.local.email)[0].winTotal %></span> </p><br>
+    <p id="careerLoses">Career Loses: <span id="loses"><%= info.filter(x=>x.name===user.local.email)[0].loseTotal %></span></p>
+    <p id="moneyHeader">Money in your Pocket $<span id="pocket"> <%= info.filter(x=>x.name===user.local.email)[0].money %></span></p>
+
+    <div class="page-header text-center">
+      <h1>National Leader Boards</h1>
+
+      <a href="/profile" class="btn btn-default btn-sm">Profile</a>
+      <!-- <a  id = "slots" class="btn btn-default btn-sm">Slots</a> -->
+      <a href="/coinFlip" class="btn btn-default btn-sm">CoinFlip</a>
+      <a href="/roulette" class="btn btn-default btn-sm">Roullette</a>
+      <a href="/logout" class="btn btn-default btn-sm">Logout</a>
+    </div>
+
+      <ul class="ranking">
+      <% for(var i=0; i<info.length; i++) {%>
+        <li class="ranking">
+          <img src="<%= info[i].medal %>"/>
+          <span><%= info[i].name %> - Wins:</span>
+          <span><%= info[i].winTotal %> - </span>
+          <span>$<%= info[i].money %></span>
+        </li>
+      <% } %>
+      </ul>
+
+
+
+
+
+  </div>
+
+  <script src="main.js"></script>
+
+</body>
+
+</html>

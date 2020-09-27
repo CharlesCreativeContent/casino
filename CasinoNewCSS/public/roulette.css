@@ -1,0 +1,45 @@
+body{
+  padding-top:80px;
+  word-wrap:break-word;
+  background-image: url("https://cdnroute.bpsgameserver.com/common/Common/Common/neutral/image/2017/03/game.LiveRoulette.backgroundimage_v3.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+img{
+    height: 100px;
+    width: 100px;
+}
+p {
+  position: fixed;
+  top: 0;
+  left: 0;
+}
+#careerLoses {
+  top: 15px;
+}
+#moneyHeader {
+  top: 30px;
+}
+
+h3, h2 {
+  text-align: center;
+}
+
+div{
+  color: white;
+}
+
+h1{
+
+  text-align: center;
+    font-size: 65px;
+    font-family: cursive;
+    font-weight: bold;
+}
+
+label{
+  font-size: 30px;
+  margin-left: 33%;
+  margin-top: 5%;
+  border-radius: 1px;
+}
