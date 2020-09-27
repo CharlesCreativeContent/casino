@@ -14,6 +14,6 @@
 
 Modified from Scotch.io's auth tutorial
 
-![img]()
-![img]()
+![img](Casino1.png)
+![img](Casino2.png)
 
